@@ -121,6 +121,13 @@
                 <data android:mimeType="video/3gp" />
                 <data android:mimeType="video/3gpp" />
                 <data android:mimeType="video/3gpp2" />
+                <data android:mimeType="video/avi" />
+                <data android:mimeType="video/x-flv" />
+                <data android:mimeType="video/x-msvideo" />
+                <data android:mimeType="video/x-ms-asf" />
+                <data android:mimeType="video/x-ms-wmv" />
+                <data android:mimeType="video/mpeg" />
+                <data android:mimeType="video/quicktime" />
              </intent-filter>
         </activity>
         <activity android:name="com.android.camera.DeleteImage"
