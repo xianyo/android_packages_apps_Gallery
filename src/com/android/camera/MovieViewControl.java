@@ -98,6 +98,13 @@ public class MovieViewControl implements MediaPlayer.OnErrorListener,
         mVideoView.setVideoURI(mUri);
         mMediaController = new MediaController(context);
         mVideoView.setMediaController(mMediaController);
+        mVideoView.setVisibility(View.INVISIBLE);
+        mVideoView.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                mVideoView.setVisibility(View.VISIBLE);
+            }
+        }, 500);
 
         // make the video view handle keys for seeking and pausing
         mVideoView.requestFocus();
